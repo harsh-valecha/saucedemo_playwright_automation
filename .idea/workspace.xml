@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="removed the session.json for security purpose">
+    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="added empty_cart_from_inventory testcase">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inventory.py" afterDir="false" />
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727967217461</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added empty_cart_from_inventory testcase">
+      <option name="closed" value="true" />
+      <created>1727967973014</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727967973014</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -117,6 +125,7 @@
     <MESSAGE value="added a line to remember how to debug testcases in playwright" />
     <MESSAGE value="implemented the session storage and reusability" />
     <MESSAGE value="removed the session.json for security purpose" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the session.json for security purpose" />
+    <MESSAGE value="added empty_cart_from_inventory testcase" />
+    <option name="LAST_COMMIT_MESSAGE" value="added empty_cart_from_inventory testcase" />
   </component>
 </project>

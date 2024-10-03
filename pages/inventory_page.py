@@ -8,7 +8,8 @@ class InventoryPage:
         self.add_to_cart_button = page.locator("//button[@data-test='add-to-cart-sauce-labs-backpack']")
         self.remove_button = page.locator("//button[@data-test='remove-sauce-labs-backpack']")
         self.cart_button = page.locator("//a[@data-test='shopping-cart-link']")
-
+        self.inventory_titles = page.locator("//div[@data-test='inventory-item-name']")
+        self.sorter_dropdown = page.locator("//select")
 
 
 
