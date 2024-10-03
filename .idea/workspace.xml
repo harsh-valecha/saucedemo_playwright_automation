@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="added a line to remember how to debug testcases in playwright">
-      <change afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/session.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_inventory.py" afterDir="false" />
+    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="removed the session.json for security purpose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inventory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +92,31 @@
       <option name="project" value="LOCAL" />
       <updated>1727959575820</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implemented the session storage and reusability">
+      <option name="closed" value="true" />
+      <created>1727967136956</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727967136956</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed the session.json for security purpose">
+      <option name="closed" value="true" />
+      <created>1727967217461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727967217461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added testcases" />
     <MESSAGE value="corrected invalid login testcase" />
     <MESSAGE value="added a line to remember how to debug testcases in playwright" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a line to remember how to debug testcases in playwright" />
+    <MESSAGE value="implemented the session storage and reusability" />
+    <MESSAGE value="removed the session.json for security purpose" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the session.json for security purpose" />
   </component>
 </project>

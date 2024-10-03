@@ -10,10 +10,5 @@ class InventoryPage:
         self.cart_button = page.locator("//a[@data-test='shopping-cart-link']")
 
 
-    def click_add_to_cart(self):
-        self.add_to_cart_button.click()
-
-
-
 
 

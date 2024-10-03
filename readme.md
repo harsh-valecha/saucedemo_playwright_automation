@@ -10,7 +10,7 @@ webapplication using playwright and pytest
  - HTML Reporting
  - Logging
  - Parallel Execution of testcases
- - screenshots on failure
+ - screenshots for test execution and failures
  - Multi browser testing
  - CI/CD Integration using Jenkins
  - Session Storing and Loading functionality
