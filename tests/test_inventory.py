@@ -10,6 +10,7 @@ def test_add_to_cart(page):
     assert inventory_page.remove_button.is_visible()==True
     page.screenshot(path='screenshots/test_screenshots/add_to_cart.png')
 
+#@pytest.mark.dependency(depends=["test_add_to_cart"])
 @pytest.mark.order(3)
 def test_empty_cart(page):
     inventory_page = InventoryPage(page,'https://www.saucedemo.com/inventory.html')
@@ -37,3 +38,27 @@ def test_sort_titles_descending(page):
     titles_after = inventory_page.inventory_titles.all_inner_texts()
     assert titles_after == titles
     page.screenshot(path='screenshots/test_screenshots/sort_descending_titles.png',full_page=True)
+
+@pytest.mark.order(6)
+def test_sort_prices_ascending(page):
+    inventory_page = InventoryPage(page, 'https://www.saucedemo.com/inventory.html')
+    prices = inventory_page.inventory_prices.all_text_contents()
+    prices_sorted = [float(i[1:]) for i in prices ]
+    prices_sorted.sort()
+    inventory_page.sorter_dropdown.select_option(label='Price (low to high)')
+    prices_after = inventory_page.inventory_prices.all_text_contents()
+    prices_converted = [float(i[1:]) for i in prices_after ]
+    assert prices_sorted == prices_converted
+    page.screenshot(path='screenshots/test_screenshots/sort_ascending_prices.png',full_page=True)
+
+@pytest.mark.order(7)
+def test_sort_prices_descending(page):
+    inventory_page = InventoryPage(page, 'https://www.saucedemo.com/inventory.html')
+    prices = inventory_page.inventory_prices.all_text_contents()
+    prices_sorted = [float(i[1:]) for i in prices ]
+    prices_sorted.sort(reverse=True)
+    inventory_page.sorter_dropdown.select_option(label='Price (high to low)')
+    prices_after = inventory_page.inventory_prices.all_text_contents()
+    prices_converted = [float(i[1:]) for i in prices_after ]
+    assert prices_sorted == prices_converted
+    page.screenshot(path='screenshots/test_screenshots/sort_descending_prices.png',full_page=True)
