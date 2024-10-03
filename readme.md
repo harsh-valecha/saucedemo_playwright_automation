@@ -13,4 +13,5 @@ webapplication using playwright and pytest
  - screenshots on failure
  - Multi browser testing
  - CI/CD Integration using Jenkins
+ - Session Storing and Loading functionality
  - Tracing 
