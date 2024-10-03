@@ -12,4 +12,4 @@ def test_invalid_login(page):
     login_page = LoginPage(page, 'https://www.saucedemo.com/')
     login_page.load_page()
     login_page.login('test_user', 'secret_sauce')
-    assert page.url == 'https://www.saucedemo.com/inventory.html'
+    assert login_page.get_error() == 'Epic sadface: Username and password do not match any user in this service'
