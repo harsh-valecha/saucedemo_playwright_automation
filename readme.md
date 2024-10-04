@@ -15,3 +15,10 @@ webapplication using playwright and pytest
  - CI/CD Integration using Jenkins
  - Session Storing and Loading functionality
  - Tracing 
+
+**Test Report Preview-**
+![img.png](img.png)
+
+**Web Application Preview-**
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)

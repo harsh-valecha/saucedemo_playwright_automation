@@ -1,3 +1,4 @@
+import os
 import sqlite3
 
 # conn = sqlite3.connect('saucedemo.db')
@@ -6,7 +7,8 @@ import sqlite3
 #     print(row)
 
 def get_users():
-    conn = sqlite3.connect('saucedemo.db')
+    db_path = os.path.join(os.path.dirname(__file__), 'saucedemo.db')
+    conn = sqlite3.connect(db_path)
     cursor = conn.execute('select * from users')
     credentials = []
     for row in cursor:
@@ -14,4 +16,4 @@ def get_users():
     conn.close()
     return credentials
 
-# print(get_users())
+print(get_users())
