@@ -11,6 +11,9 @@ class InventoryPage:
         self.inventory_titles = page.locator("//div[@data-test='inventory-item-name']")
         self.inventory_prices = page.locator("//div[@data-test='inventory-item-price']")
         self.sorter_dropdown = page.locator("//select")
+        self.menu_button = page.locator("//button[normalize-space()='Open Menu']")
+        self.logout_link = page.locator("//a[@data-test='logout-sidebar-link']")
 
-
-
+    def logout(self):
+        self.menu_button.click()
+        self.logout_link.click()

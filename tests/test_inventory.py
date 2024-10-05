@@ -1,7 +1,33 @@
 import pytest
-from playwright.sync_api import Page
+from playwright.sync_api import Page,sync_playwright
 from pages.inventory_page import InventoryPage
+from pages.login_page import LoginPage
+from tests.conftest import browser, context
 from utils.config import Config
+from data.db_connector import execute_query, get_valid_users
+
+@pytest.fixture(scope='function', params=get_valid_users())
+def page(request):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)  # Launch browser
+        context = browser.new_context()  # Create a new browser context
+        page = context.new_page()  # Open a new page
+
+        # Use user_data inside the fixture for login
+        user_data = request.param
+        # print(user_data)
+        # page.pause()
+        login_page = LoginPage(page, Config.login_page_url)
+        login_page.login(user_data['username'], user_data['password'])
+
+        yield page  # Yield the page to the test
+
+        # Teardown phase: logout
+        inventory_page = InventoryPage(page, Config.inventory_page_url)
+        inventory_page.logout()
+
+        context.close()
+        browser.close()
 
 @pytest.mark.order(2)
 def test_add_to_cart(page):
@@ -11,10 +37,11 @@ def test_add_to_cart(page):
     assert inventory_page.remove_button.is_visible()==True
     page.screenshot(path='screenshots/test_screenshots/add_to_cart.png')
 
-#@pytest.mark.dependency(depends=["test_add_to_cart"])
+
 @pytest.mark.order(3)
 def test_empty_cart(page):
     inventory_page = InventoryPage(page,Config.inventory_page_url)
+    inventory_page.add_to_cart_button.click()
     assert inventory_page.remove_button.is_visible()==True
     inventory_page.remove_button.click()
     assert inventory_page.add_to_cart_button.is_visible()==True

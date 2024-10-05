@@ -7,10 +7,10 @@ from pages.cart_page import CartPage
 from pages.checkout_page import CheckoutPage
 from pages.order_confirmation_page import OrderConfirmationPage
 from pages.order_completion_page import OrderCompletionPage
-from data.db_connector import get_users
+from data.db_connector import  get_valid_users
 
 
-@pytest.mark.parametrize("user_data",get_users())
+@pytest.mark.parametrize("user_data",get_valid_users())
 def test_complete_flow(page:Page,user_data:dict):
     login_page = LoginPage(page,Config.login_page_url)
     login_page.login(user_data['username'],user_data['password'])
@@ -26,6 +26,6 @@ def test_complete_flow(page:Page,user_data:dict):
     #order_completion_page = OrderCompletionPage(page,Config.order_completion_page)
     assert page.url == Config.order_completion_page
 
-@pytest.mark.parametrize("user_data",get_users())
+@pytest.mark.parametrize("user_data",get_valid_users())
 def test_db(user_data):
     print(user_data['username'],user_data['password'])

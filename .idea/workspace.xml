@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="updated urls to work properly using Config class">
+    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="testcases working fine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/db_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/saucedemo.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/saucedemo.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/add_to_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/add_to_cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/empty_cart_from_inventory.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/empty_cart_from_inventory.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_ascending_titles.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/sort_ascending_titles.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_descending_titles.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/sort_descending_titles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/add_to_cart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/empty_cart_from_inventory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_ascending_prices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_ascending_titles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_descending_prices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_descending_titles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_e2e.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inventory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
@@ -164,8 +174,19 @@
       <option name="project" value="LOCAL" />
       <updated>1728058091404</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testcases working fine">
+      <option name="closed" value="true" />
+      <created>1728131205673</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728131205673</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.ini" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added testcases" />
@@ -179,6 +200,7 @@
     <MESSAGE value="added pages" />
     <MESSAGE value="added datadriven feature and updated readme complete flow testcase not working properly for now" />
     <MESSAGE value="updated urls to work properly using Config class" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated urls to work properly using Config class" />
+    <MESSAGE value="testcases working fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="testcases working fine" />
   </component>
 </project>
