@@ -46,7 +46,7 @@ def test_sort_prices_ascending(page):
     prices = inventory_page.inventory_prices.all_text_contents()
     prices_sorted = [float(i[1:]) for i in prices ]
     prices_sorted.sort()
-    inventory_page.sorter_dropdown.select_option(label='Price (low to high)')
+    inventory_page.sorter_dropdown.select_option(value='lohi')
     prices_after = inventory_page.inventory_prices.all_text_contents()
     prices_converted = [float(i[1:]) for i in prices_after ]
     assert prices_sorted == prices_converted
@@ -58,8 +58,9 @@ def test_sort_prices_descending(page):
     prices = inventory_page.inventory_prices.all_text_contents()
     prices_sorted = [float(i[1:]) for i in prices ]
     prices_sorted.sort(reverse=True)
-    inventory_page.sorter_dropdown.select_option(label='Price (high to low)')
+    inventory_page.sorter_dropdown.select_option(value='hilo')
     prices_after = inventory_page.inventory_prices.all_text_contents()
     prices_converted = [float(i[1:]) for i in prices_after ]
+
     assert prices_sorted == prices_converted
     page.screenshot(path='screenshots/test_screenshots/sort_descending_prices.png',full_page=True)

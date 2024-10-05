@@ -10,7 +10,7 @@ def test_valid_login(page,user_data:dict):
     login_page = LoginPage(page,Config.login_page_url)
     login_page.login(user_data['username'],user_data['password'])
     print(user_data['username'])
-    assert page.url == 'https://www.saucedemo.com/inventory.html'
+    assert page.url == Config.inventory_page_url
 
 
 @pytest.mark.skip
