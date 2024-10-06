@@ -1,8 +1,9 @@
 import pytest
 from playwright.sync_api import Page
+from utils.config import Config
 
 class CheckoutPage:
-    def __init__(self,page:Page,url:str):
+    def __init__(self,page:Page,url:str= Config.checkout_page_url):
         self.page = page
         self.page.goto(url)
         self.firstname_input = page.locator("//input[@id='first-name']")

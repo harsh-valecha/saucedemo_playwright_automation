@@ -48,4 +48,25 @@ def test_continue_shopping(page:Page):
     assert page.url == Config.inventory_page_url,f"Page not redirected to inventory for {user_username} "
     page.screenshot(path=f'screenshots/test_screenshots/{user_username}/continue_shopping_button_check.png', full_page=True)
 
+def test_checkout(page:Page):
+    inventory_page = InventoryPage(page)
+    price_from_inventory = inventory_page.add_to_cart_item()
+    cart_page = CartPage(page)
+    price_in_cart = float(cart_page.cart_item_price.text_content()[1:])
+    assert price_from_inventory == price_in_cart,f"Price is not the same as inventory for {user_username}"
+    cart_page.checkout_button.click()
+    assert page.url == Config.checkout_page_url,f"page not redirected to checkout page for {user_username}"
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/positive_checkout.png',
+                    full_page=True)
 
+
+def test_remove_item(page:Page):
+    inventory_page = InventoryPage(page)
+    price_from_inventory = inventory_page.add_to_cart_item()
+    cart_page = CartPage(page)
+    price_in_cart = float(cart_page.cart_item_price.text_content()[1:])
+    assert price_from_inventory == price_in_cart,f"Price is not the same as inventory for {user_username}"
+    cart_page.remove_button.click()
+    assert cart_page.cart_item_names.is_visible()==False,f"Item is still visible for {user_username}"
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/remove_item.png',
+                    full_page=True)

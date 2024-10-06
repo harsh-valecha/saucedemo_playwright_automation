@@ -11,4 +11,5 @@ class CartPage:
         self.cart_item_names = page.locator("//div[@class='cart_item']")
         self.checkout_button = page.locator("//button[@id='checkout']")
         self.continue_shopping_button = page.locator("//button[@id='continue-shopping']")
-
+        self.cart_item_price = page.locator("//div[@data-test='inventory-item-price']")
+        self.remove_button = page.locator("[data-test=\"remove-sauce-labs-backpack\"]")
