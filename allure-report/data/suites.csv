@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","466","test_sort_prices_descending[page3]","tests","Sun Oct 06 15:16:05 IST 2024","failed","Sun Oct 06 15:16:06 IST 2024","","test_inventory","",""
+"","537","test_sort_prices_descending[page4]","tests","Sun Oct 06 15:16:05 IST 2024","failed","Sun Oct 06 15:16:06 IST 2024","","test_inventory","",""
+"","10529","test_sort_prices_descending[page2]","tests","Sun Oct 06 15:16:11 IST 2024","passed","Sun Oct 06 15:16:21 IST 2024","","test_inventory","",""
+"","671","test_sort_prices_descending[page1]","tests","Sun Oct 06 15:16:05 IST 2024","failed","Sun Oct 06 15:16:06 IST 2024","","test_inventory","",""
+"","904","test_sort_prices_descending[page0]","tests","Sun Oct 06 15:16:05 IST 2024","passed","Sun Oct 06 15:16:06 IST 2024","","test_inventory","",""

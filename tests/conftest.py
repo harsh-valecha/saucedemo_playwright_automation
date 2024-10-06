@@ -1,5 +1,34 @@
+import os
 import pytest
+import allure
 from playwright.sync_api import sync_playwright
+
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    # Execute the test and get the report
+    outcome = yield
+    report = outcome.get_result()
+
+    # Check if the test failed
+    if report.when == 'call' and report.failed:
+        # Get the Playwright page object from the test's arguments
+        page = item.funcargs.get('page')
+        if page:
+            # Define the screenshot directory and create it if necessary
+            screenshot_dir = 'screenshots/failed_screenshot/'
+            os.makedirs(screenshot_dir, exist_ok=True)
+
+            # Generate a unique screenshot path based on the test's node id
+            screenshot_path = os.path.join(screenshot_dir, f"{item.nodeid.replace('::', '_')}.png")
+
+            # Capture the full page screenshot
+            page.screenshot(path=screenshot_path, full_page=True)
+
+            # Attach the screenshot to the Allure report
+            with open(screenshot_path, "rb") as f:
+                allure.attach(f.read(), name="Screenshot", attachment_type=allure.attachment_type.PNG)
+
+
 
 
 @pytest.fixture(scope="session")

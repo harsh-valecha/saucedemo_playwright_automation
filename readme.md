@@ -16,7 +16,19 @@ webapplication using playwright and pytest
  - Session Storing and Loading functionality
  - Tracing 
 
-**Test Report Preview-**
+**Command to generate Allure test report in project directory-**
+
+```
+allure generate allure-results --clean -o allure-report
+```
+
+**Allure Test Report Preview -**
+![img_4.png](img_4.png)
+screenshots are also attached to failed testcase-
+![img_5.png](img_5.png)
+
+
+**HTML Test Report Preview-**
 ![img.png](img.png)
 
 **Web Application Preview-**
