@@ -6,6 +6,9 @@ from tests.conftest import browser, context
 from utils.config import Config
 from data.db_connector import execute_query, get_valid_users
 
+# username access
+user_username = None
+
 @pytest.fixture(scope='function', params=get_valid_users())
 def page(request):
     with sync_playwright() as p:
@@ -15,6 +18,8 @@ def page(request):
 
         # Use user_data inside the fixture for login
         user_data = request.param
+        global user_username
+        user_username = user_data['username']
         # print(user_data)
         # page.pause()
         login_page = LoginPage(page, Config.login_page_url)
@@ -33,19 +38,19 @@ def page(request):
 def test_add_to_cart(page):
     inventory_page = InventoryPage(page,Config.inventory_page_url)
     inventory_page.add_to_cart_button.click()
-    assert inventory_page.add_to_cart_button.is_visible()==False
-    assert inventory_page.remove_button.is_visible()==True
-    page.screenshot(path='screenshots/test_screenshots/add_to_cart.png')
+    assert inventory_page.add_to_cart_button.is_visible()==False,"Add to cart button is visible even on clicking the same"
+    assert inventory_page.remove_button.is_visible()==True,f"Remove button is not visible for {user_username} "
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/add_to_cart.png')
 
 
 @pytest.mark.order(3)
 def test_empty_cart(page):
     inventory_page = InventoryPage(page,Config.inventory_page_url)
     inventory_page.add_to_cart_button.click()
-    assert inventory_page.remove_button.is_visible()==True
+    assert inventory_page.remove_button.is_visible()==True,f"Remove button should be visible but is not visible for {user_username} "
     inventory_page.remove_button.click()
-    assert inventory_page.add_to_cart_button.is_visible()==True
-    page.screenshot(path='screenshots/test_screenshots/empty_cart_from_inventory.png')
+    assert inventory_page.add_to_cart_button.is_visible()==True,f"Add to cart button should be visible again but not visible for {user_username} "
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/empty_cart_from_inventory.png')
 
 @pytest.mark.order(4)
 def test_sort_titles_ascending(page):
@@ -54,8 +59,8 @@ def test_sort_titles_ascending(page):
     titles.sort()
     inventory_page.sorter_dropdown.select_option(value='az')
     titles_after = inventory_page.inventory_titles.all_inner_texts()
-    assert titles_after == titles
-    page.screenshot(path='screenshots/test_screenshots/sort_ascending_titles.png',full_page=True)
+    assert titles_after == titles,f"Sorting ascending not working properly for {user_username} "
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/sort_ascending_titles.png',full_page=True)
 
 @pytest.mark.order(5)
 def test_sort_titles_descending(page):
@@ -64,8 +69,8 @@ def test_sort_titles_descending(page):
     titles.sort(reverse=True)
     inventory_page.sorter_dropdown.select_option(value='za')
     titles_after = inventory_page.inventory_titles.all_inner_texts()
-    assert titles_after == titles
-    page.screenshot(path='screenshots/test_screenshots/sort_descending_titles.png',full_page=True)
+    assert titles_after == titles,f"Sorting descending not working properly for {user_username} "
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/sort_descending_titles.png',full_page=True)
 
 @pytest.mark.order(6)
 def test_sort_prices_ascending(page):
@@ -76,8 +81,8 @@ def test_sort_prices_ascending(page):
     inventory_page.sorter_dropdown.select_option(value='lohi')
     prices_after = inventory_page.inventory_prices.all_text_contents()
     prices_converted = [float(i[1:]) for i in prices_after ]
-    assert prices_sorted == prices_converted
-    page.screenshot(path='screenshots/test_screenshots/sort_ascending_prices.png',full_page=True)
+    assert prices_sorted == prices_converted ,f"Sorting ascending not working properly for {user_username} "
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/sort_ascending_prices.png',full_page=True)
 
 @pytest.mark.order(7)
 def test_sort_prices_descending(page):
@@ -89,5 +94,5 @@ def test_sort_prices_descending(page):
     prices_after = inventory_page.inventory_prices.all_text_contents()
     prices_converted = [float(i[1:]) for i in prices_after ]
 
-    assert prices_sorted == prices_converted
-    page.screenshot(path='screenshots/test_screenshots/sort_descending_prices.png',full_page=True)
+    assert prices_sorted == prices_converted ,f"Sorting descending not working properly for {user_username}"
+    page.screenshot(path=f'screenshots/test_screenshots/{user_username}/sort_descending_prices.png',full_page=True)

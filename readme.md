@@ -22,3 +22,8 @@ webapplication using playwright and pytest
 **Web Application Preview-**
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
+
+**Bug Report -**
+![img_3.png](img_3.png)
+Link - https://docs.google.com/spreadsheets/d/1-3DCJGuB01RxRvMc_h8IJ_yKvAfeLIgDF1L-G9LUGRs/edit?usp=sharing
+

@@ -4,23 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="testcases working fine">
+    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="updated inventory testcases to work for multiple users">
+      <change afterPath="$PROJECT_DIR$/img_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/add_to_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/continue_shopping_button_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/empty_cart_checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/sort_ascending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/valid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/locked_out_user/invalid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/add_to_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/continue_shopping_button_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/empty_cart_checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/empty_cart_from_inventory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/sort_ascending_prices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/sort_ascending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/sort_descending_prices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/sort_descending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/valid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/add_to_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/continue_shopping_button_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/empty_cart_checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/sort_ascending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/valid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/add_to_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/continue_shopping_button_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/empty_cart_checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/empty_cart_from_inventory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_ascending_prices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_ascending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_descending_prices.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_descending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/valid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/test/invalid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/add_to_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/continue_shopping_button_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/empty_cart_checkout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/empty_cart_from_inventory.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/sort_ascending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/sort_descending_titles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/valid_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_cart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db_connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/db_connector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/data/queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/saucedemo.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/saucedemo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/test_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/add_to_cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/empty_cart_from_inventory.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_ascending_prices.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_ascending_titles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_descending_prices.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/sort_descending_titles.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_e2e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_inventory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
@@ -182,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728131205673</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="updated inventory testcases to work for multiple users">
+      <option name="closed" value="true" />
+      <created>1728143806471</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728143806471</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -201,6 +236,7 @@
     <MESSAGE value="added datadriven feature and updated readme complete flow testcase not working properly for now" />
     <MESSAGE value="updated urls to work properly using Config class" />
     <MESSAGE value="testcases working fine" />
-    <option name="LAST_COMMIT_MESSAGE" value="testcases working fine" />
+    <MESSAGE value="updated inventory testcases to work for multiple users" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated inventory testcases to work for multiple users" />
   </component>
 </project>
