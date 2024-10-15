@@ -4,66 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="updated configration according to allure report">
+    <list default="true" id="5ddeca56-98fd-463c-be4c-a7fa83392643" name="Changes" comment="completed cart_page testcases">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/2f2df1034df796d4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/3b8e14eb0aa3ab90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/8949ca856e3110f8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/39518f1c154a7100.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/6ddc2feca1a06726.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/93e8f57afd108dc3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/9d0c9b0919cdb180.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/d424bcdc3c841ece.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/mail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/behaviors/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/packages/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/environment.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/cart_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/checkout_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/checkout_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/inventory_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/order_completion_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/order_completion_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/empty_cart_checkout.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/empty_cart_checkout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/sort_descending_prices.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/sort_descending_prices.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/continue_shopping_button_check.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/continue_shopping_button_check.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_descending_prices.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_descending_prices.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/continue_shopping_button_check.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/continue_shopping_button_check.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/empty_cart_checkout.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/empty_cart_checkout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/sort_ascending_titles.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/sort_ascending_titles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/valid_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/error_user/valid_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/locked_out_user/invalid_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/locked_out_user/invalid_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/valid_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/performance_glitch_user/valid_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/add_to_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/problem_user/add_to_cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/empty_cart_from_inventory.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/empty_cart_from_inventory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_ascending_titles.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_ascending_titles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_descending_titles.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/sort_descending_titles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/valid_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/standard_user/valid_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/add_to_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/add_to_cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/empty_cart_from_inventory.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/empty_cart_from_inventory.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/sort_ascending_titles.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/sort_ascending_titles.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/valid_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/test_screenshots/visual_user/valid_login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_e2e.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728209046993</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="completed cart_page testcases">
+      <option name="closed" value="true" />
+      <created>1728222263474</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728222263474</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -269,6 +233,7 @@
     <MESSAGE value="updated inventory testcases to work for multiple users" />
     <MESSAGE value="testcases configured to store screenshots according to username" />
     <MESSAGE value="updated configration according to allure report" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated configration according to allure report" />
+    <MESSAGE value="completed cart_page testcases" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed cart_page testcases" />
   </component>
 </project>

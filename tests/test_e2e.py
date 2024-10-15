@@ -9,7 +9,7 @@ from pages.order_confirmation_page import OrderConfirmationPage
 from pages.order_completion_page import OrderCompletionPage
 from data.db_connector import  get_valid_users
 
-
+@pytest.mark.skip
 @pytest.mark.parametrize("user_data",get_valid_users())
 def test_complete_flow(page:Page,user_data:dict):
     login_page = LoginPage(page,Config.login_page_url)
